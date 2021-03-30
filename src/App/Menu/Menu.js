@@ -1,6 +1,12 @@
-import React from "react"
-
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import "./Menu.css"
+
 
 const Menu = ({}) =>
     {
@@ -10,17 +16,24 @@ const Menu = ({}) =>
             <label className="nav__showmenu" htmlFor="showmenu">&#9776;</label>
             <label className="nav__back" htmlFor="showmenu"></label>
             <ul className="menu">
-              <li><a className="menu__item" href="#">About</a></li>
-              <li><a className="menu__item" href="#">Filter</a>
-                <input className="menu__check" type="checkbox" id="menu2"/>
-                <label className="menu__showsub" htmlFor="menu2">&#9660;</label>
-                <ul className="menu__submenu">
-                  <li><a className="menu__item" href="#">Dogs</a></li>
-                  <li><a className="menu__item" href="#">Castle</a></li>
-                  <li><a className="menu__item" href="#">Other</a></li>
-                </ul>
-              </li>
-              <li><a className="menu__item" href="#">Contacts</a></li>
+              <li className="menu__item"> About</li>
+              <li><a className="menu__item">
+                      <h5 className="menu_item1">Choose category</h5>
+                        <select
+                          // id="category"
+                          // name="category"
+                          // value={category}
+                          // onChange={handleChange}
+                          >
+                          <option>all</option>
+                          <option>Dogs</option>
+                          <option>Museums</option>
+                          <option>Other</option>
+                          <option>Castles</option>
+
+                        </select>
+              </a></li>
+              <li><a className="menu__item" href="#">Rating</a></li>
             </ul>
         </div>
     )

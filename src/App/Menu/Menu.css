@@ -5,7 +5,7 @@ label {cursor: pointer;}
 
 .nav__showmenu {
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     display: inline-block;
     margin-left: 5vw;
     padding: 5px 10px 10px;
@@ -29,7 +29,9 @@ label {cursor: pointer;}
     color: #fff;
     overflow: hidden;
   }
-
+.menu_item1 {
+    font-size: 14px;
+}
 .menu {
     position: fixed;
     top: 0;
@@ -48,6 +50,7 @@ label {cursor: pointer;}
     transition: transform .3s;
     will-change: transform;
     backface-visibility: hidden;
+    z-index: 3;
 }
 
 .menu__submenu {
@@ -80,9 +83,15 @@ label {cursor: pointer;}
     bottom: 0;
 }
 
-.menu__item:hover,.nav__showmenu:hover,.menu__showsub:hover {opacity: 0.7;}
-.menu::-webkit-scrollbar {display: none;}
+.menu__item:hover,.nav__showmenu:hover,.menu__showsub:hover {
+    
+    opacity: 0.7;
+}
+.menu::-webkit-scrollbar {
+    display: none;
+    
+}
 .nav__check:checked+.nav__showmenu {color:#fff;}
 .menu__check:checked~.menu__submenu {max-height: 50vh;}
-.menu__check:checked+.menu__showsub {transform: rotate(90deg);}
+.menu__check:checked+.menu__showsub {transform: rotate(180deg);}
 .nav__check:checked~.menu {transform: translateX(0);}

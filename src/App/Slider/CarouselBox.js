@@ -18,8 +18,8 @@ export default class CarouselBox extends Component {
                                                 />
                                                  </div>
                                 <Carousel.Caption>
-                                        <h3>Image111</h3>
-                                        <p>Text</p>
+                                        <h3>Seaside article</h3>
+                                        <p>Popular from category: "Other"</p>
                                 </Carousel.Caption>
                         </Carousel.Item>
              
@@ -32,8 +32,8 @@ export default class CarouselBox extends Component {
                                         />
                                 </div>
                                 <Carousel.Caption>
-                                        <h3 style={{ textAlign: "center", fontSize: "5em" }}>Image111</h3>
-                                        <p>Text</p>
+                                        <h3 style={{ textAlign: "center", fontSize: "5em" }}>Castles Europe article</h3>
+                                        <p>Popular from category: "Castle"</p>
                                 </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -45,8 +45,8 @@ export default class CarouselBox extends Component {
                                         />
                                 </div>
                                 <Carousel.Caption>
-                                        <h3>Image111</h3>
-                                        <p>Text</p>
+                                        <h3>Mountains articles</h3>
+                                        <p>Popular from category: "Other"</p>
                                 </Carousel.Caption>
                         </Carousel.Item>
                 </Carousel>
