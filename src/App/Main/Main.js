@@ -14,7 +14,7 @@ import './Main.css'
 const Main = ({}) => 
         { 
             return (
-                            <div className="container mx-auto mt-6">
+                            <div className="container mx-auto mt-3">
                                 <div className="row">
                                     <div className="col-md-5">
                                         <div className="card" styles="width: 30rem;">
