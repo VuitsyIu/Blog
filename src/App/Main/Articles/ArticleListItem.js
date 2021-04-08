@@ -4,16 +4,21 @@ import Articles from "./Articles.js"
 
 
 
-const ArticleListItem = (props) => {
+const ArticleListItem = ({
+image,
+title,
+subtitle,
+text
+}) => {
         
         return (
             <div className="col-md-5">
             <div className="card" styles="width: 30rem;">
-                <img src={props.image} className="card-img-top" alt="image"/>
+                <img src={image} className="card-img-top" alt="image"/>
                 <div className="card-body">
-                <h5 className="card-title">{props.title}</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">{props.subtitle}</h6>
-                        <p className="card-text">{props.text}</p>
+                <h5 className="card-title">{title}</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">{subtitle}</h6>
+                        <p className="card-text">{text}</p>
                             <a href="#" className="btn mr-2">Read</a>
                                 <a href="#" className="btn"> Rate</a>
                 </div>

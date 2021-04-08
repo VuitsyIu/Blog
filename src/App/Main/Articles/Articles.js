@@ -2,7 +2,7 @@
 const Articles = [
     {
     id: 1,
-    image: "../../../src/Assets/Image1.jpg",
+    image: "././././Assets/Image1.jpg",
     title: "Dog article 1",
     subtitle: "Dogs",
     text: "Fun article about Hasky dogs",
@@ -65,3 +65,5 @@ const Articles = [
     read: "UUUUUU",
     },
     ]
+
+    export default Articles;

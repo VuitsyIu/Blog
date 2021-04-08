@@ -6,36 +6,23 @@ const ArticleList = () => {
     return (
         <>
             <div className="row">
-            <div className="col-md-5">
-                    <ArticleListItem
-                    subtitle="Castle2"
-                    title="Castle"
+                    {
+                            articles.map(({
+                                image,
+                                subtitle,
+                                title,
+                                text    
+                            })=>(
+                                <div className="col-md-5">
+                        <ArticleListItem
+                    image={image}
+                    subtitle={subtitle}
+                    title={title}
+                    text={text}
                     />
-            </div>
-            <div className="col-md-5">
-                    <ArticleListItem
-                    subtitle="Castle2"
-                    title="Castle"
-                    
-                    />
-            </div>
-            <div className="col-md-5">
-                    <ArticleListItem
-                    subtitle="Castle2"
-                    title="Castle"
-                    
-                    
-                    />
-            </div>
-            <div className="col-md-5">
-                    <ArticleListItem
-                    subtitle="Mountains"
-                    title="Castle"
-                    
-                    
-                    
-                    />
-            </div>
+                                </div>          
+                            ))
+                            }
             </div>
         </>
             )
