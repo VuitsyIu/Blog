@@ -13,7 +13,7 @@ const ArticleList = () => {
                                 title,
                                 text    
                             })=>(
-                                <div className="col-md-5">
+                                <div className="col-md-8"> 
                         <ArticleListItem
                     image={image}
                     subtitle={subtitle}

@@ -2,17 +2,19 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Articles from "./Articles.js"
 
+class ArticleListItem extends Component {
 
+    render() {
+            
+        const {
+            image,
+            title,
+            subtitle,
+            text
+            }= this.props;
 
-const ArticleListItem = ({
-image,
-title,
-subtitle,
-text
-}) => {
-        
         return (
-            <div className="col-md-5">
+            <div className="col-md-8">
             <div className="card" styles="width: 30rem;">
                 <img src={image} className="card-img-top" alt="image"/>
                 <div className="card-body">
@@ -25,7 +27,13 @@ text
             </div> 
         </div>   
         )
+
     }
+
+
+}
+
+
 
 
 ArticleListItem.propTypes = {
