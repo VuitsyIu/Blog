@@ -16,9 +16,9 @@ const Menu = ({}) =>
             <label className="nav__showmenu" htmlFor="showmenu">&#9776;</label>
             <label className="nav__back" htmlFor="showmenu"></label>
             <ul className="menu">
-              <li className="menu__item"> About</li>
+              <li><a className="menu__item" href="#">About</a></li>
               <li><a className="menu__item">
-                      <h5 className="menu_item1">Choose category</h5>
+                      <div className="menu__item">Choose category</div>
                         <select
                           // id="category"
                           // name="category"
@@ -33,7 +33,7 @@ const Menu = ({}) =>
 
                         </select>
               </a></li>
-              <li><a className="menu__item" href="#">Rating</a></li>
+              <li><a className="menu__item" href="#">Top Rated</a></li>
             </ul>
         </div>
     )
