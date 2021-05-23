@@ -16,32 +16,19 @@ const Menu = ({}) =>
             <label className="nav__showmenu" htmlFor="showmenu">&#9776;</label>
             <label className="nav__back" htmlFor="showmenu"></label>
             <ul className="menu">
+              <Link to="/">
+                <li>
+                  Home
+                </li>
+              </Link>
               <Link to="/AboutMenu">
               <li>
                 About
               </li>
               </Link>
-              <li><a className="menu__item">
-                      <div className="menu__item">Choose category</div>
-                        <select
-                          // id="category"
-                          // name="category"
-                          // value={category}
-                          // onChange={handleChange}
-                          >
-                          <option>all</option>
-                          <option>Dogs</option>
-                          <option>Museums</option>
-                          <option>Other</option>
-                          <option>Castles</option>
-
-                        </select>
-              </a></li>
-              <li>
-                <Link to="/TopRated">
+              <Link to="/TopRated">
                   Top rated
-                </Link>
-              </li>
+              </Link>
             </ul>
         </div>
 
