@@ -1,15 +1,26 @@
 import React from 'react'
-import Menu from './Menu/Menu.js'
-import Main from './Main/Main.js'
-import CarouselBox from './Slider/CarouselBox.js'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+  import HomePage from "./Main/AboutMenu/HomePage.js"
+  import AboutMenu from "./Main/AboutMenu/AboutMenu.js"
+  import TopRated from "./Main/AboutMenu/TopRated.js"
+ 
+
+
 
 const App = () => {
         return (
+            <Router> 
             <>
-                 <Menu/>
-                <CarouselBox/>
-                <Main/>
+        <Route path="/" exact component={HomePage}/>            
+        <Route path="/AboutMenu" component={AboutMenu}/>
+        <Route path="/TopRated" component={TopRated}/> 
             </>
+            </Router>
         )
     }
 
