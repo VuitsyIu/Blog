@@ -7,7 +7,7 @@ import {
   } from "react-router-dom";
   import HomePage from "./Main/AboutMenu/HomePage.js"
   import AboutMenu from "./Main/AboutMenu/AboutMenu.js"
-  import TopRated from "./Main/AboutMenu/TopRated.js"
+  import TopRated from "./Main/TopRatedMenu/TopRated.js"
  
 
 
