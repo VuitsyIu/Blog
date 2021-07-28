@@ -2,7 +2,12 @@ input {display: none;}
 label {cursor: pointer;}
 
 .nav {user-select: none;}
-
+.nav_button{
+    color:aliceblue;
+    font-size: 1em;
+    margin: 20px 20px 20px 20px;
+    text-decoration: none;
+}
 .nav__showmenu {
     position: fixed;
     z-index: 4;
@@ -86,6 +91,7 @@ label {cursor: pointer;}
 .menu__item:hover,.nav__showmenu:hover,.menu__showsub:hover {
     
     opacity: 0.7;
+    text-decoration: none;
 }
 .menu::-webkit-scrollbar {
     display: none;

@@ -17,17 +17,19 @@ const Menu = ({}) =>
             <label className="nav__back" htmlFor="showmenu"></label>
             <ul className="menu">
               <Link to="/">
-                <li>
+                <li className="nav_button">
                   Home
                 </li>
               </Link>
               <Link to="/AboutMenu">
-              <li>
+                <li className="nav_button">
                 About
               </li>
               </Link>
               <Link to="/TopRated">
+                <li className="nav_button">
                   Top rated
+              </li>
               </Link>
             </ul>
         </div>

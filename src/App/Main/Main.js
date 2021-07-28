@@ -8,7 +8,8 @@ const Main = () => {
     return (
          <div className="container mx-auto mt-3">
             <div className="row">
-                <ArticleList/>     
+                <ArticleList/>
+                     
             </div>
         </div>
             )

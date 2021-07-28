@@ -5,7 +5,7 @@ import articles from "./Articles"
 const ArticleList = () => {
     return (
             <>
-        <li><a className="menu__item">
+        {/* <a className="menu__item">
                       <div className="menu__item">Choose category</div>
                         <select
                           // id="category"
@@ -20,7 +20,7 @@ const ArticleList = () => {
                           <option>Castles</option>
 
                         </select>
-              </a></li>
+              </a> */}
 
 
         
